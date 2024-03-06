@@ -1,7 +1,8 @@
 import { v4 as uuid } from "uuid";
 import { IGithub, ILinkedin, IInstagram } from "@/assets/icons";
+import { ISocialLink } from "@/interfaces";
 
-export const socialLinks = [
+export const socialLinks: ISocialLink[] = [
   {
     id: uuid(),
     icon: <IGithub />,

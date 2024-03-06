@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: "selector",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,6 +10,7 @@ const config: Config = {
   theme: {
     container: {
       center: true,
+      padding: "20px",
       screens: {
         xl: "1110px",
       },
@@ -21,15 +23,20 @@ const config: Config = {
       },
 
       colors: {
-        "gull-gray": "#94A3B8",
-        "slate-gray": "#64748B",
-        "turquoise-blue": "#5EEAD4",
         flord: "#475569",
         mystic: "#E2E8F0",
         mirage: "#1E293B",
       },
+      textColor: {
+        "teal-900": "#2D3748", // Change the hex code as per your requirement
+      },
     },
   },
-  plugins: [],
+  variants: {
+    extend: {
+      textColor: ["dark", "group-hover"],
+    },
+  },
+  plugins: [require("daisyui")],
 };
 export default config;

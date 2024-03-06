@@ -4,3 +4,7 @@ export * from "./SocialLinks";
 export * from "./Experience";
 export * from "./Tag";
 export * from "./BodyOverlay";
+export * from "./Project";
+export * from "./ToggleButton";
+export * from "./Header";
+export * from "./Skill";
