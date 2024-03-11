@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export type IconProps = {
   width?: number;
   height?: number;
@@ -19,6 +21,12 @@ interface ITag {
   text: string;
 }
 
+export interface IImage {
+  id: any;
+  img: any;
+  summary: JSX.Element;
+}
+
 export interface IExperience {
   id: any;
   role: string;
@@ -38,4 +46,5 @@ export interface IProject {
   tasks: ITask[];
   tags: ITag[];
   image: any;
+  images: IImage[];
 }

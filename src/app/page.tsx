@@ -21,7 +21,7 @@ export default function Home() {
 
   return (
     <main className="  md:px-10  lg:px-0 lg:py-0 dark:text-slate-400 ">
-      <Header />
+      <Header extraClass="fixed top-0 left-0 right-0 " />
       <BodyOverlay onScrollChange={setActiveSection} />
       <div className=" container   ">
         <div className="flex items-start flex-col lg:flex-row">

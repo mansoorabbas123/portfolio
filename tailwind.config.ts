@@ -37,6 +37,6 @@ const config: Config = {
       textColor: ["dark", "group-hover"],
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("tailwind-scrollbar")],
 };
 export default config;

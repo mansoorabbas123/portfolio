@@ -1,0 +1,17 @@
+[33mcommit 8cbe7c2d1ba74760d6a8cc9c083ff321f2778b22[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: DevAttaKhan <attakhan220@gmail.com>
+Date:   Thu Mar 7 02:24:17 2024 +0500
+
+    implemented theme, responsiveness and added skills
+
+[33mcommit ecd0731d0c608b80c03a708b57e228d461116c81[m
+Author: DevAttaKhan <attakhan220@gmail.com>
+Date:   Tue Mar 5 02:49:56 2024 +0500
+
+    good first commit
+
+[33mcommit 76586723a753ee2f1d80065f46dc53abb40c72f0[m
+Author: amuhammad <amuhammad@phdsolutions.ca>
+Date:   Mon Mar 4 19:17:33 2024 +0500
+
+    Initial commit from Create Next App

@@ -8,3 +8,5 @@ export * from "./Project";
 export * from "./ToggleButton";
 export * from "./Header";
 export * from "./Skill";
+export * from "./Gallery";
+export * from "./Modal";

@@ -3,7 +3,7 @@ import { useTheme } from "@/context/themeContext";
 import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 
 type Props = {
-  onScrollChange: Dispatch<SetStateAction<string | undefined>>;
+  onScrollChange?: Dispatch<SetStateAction<string | undefined>>;
 };
 
 export const BodyOverlay = ({ onScrollChange }: Props) => {
@@ -18,29 +18,31 @@ export const BodyOverlay = ({ onScrollChange }: Props) => {
   }, []);
 
   useEffect(() => {
-    const experience = document.querySelector("#EXPERIENCE");
-    const summary = document.querySelector("#SUMMARY");
-    const project = document.querySelector("#PROJECTS");
+    if (onScrollChange) {
+      const experience = document.querySelector("#EXPERIENCE");
+      const summary = document.querySelector("#SUMMARY");
+      const project = document.querySelector("#PROJECTS");
 
-    const intersectionHandler = (entries: IntersectionObserverEntry[]) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          onScrollChange((entry.target as HTMLElement).dataset.id);
-        }
+      const intersectionHandler = (entries: IntersectionObserverEntry[]) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            onScrollChange((entry.target as HTMLElement).dataset.id);
+          }
+        });
+      };
+
+      const options = {
+        threshold: 0.9,
+      };
+
+      const observer = new IntersectionObserver(intersectionHandler, {
+        rootMargin: "100px",
+        threshold: 0.4,
       });
-    };
-
-    const options = {
-      threshold: 0.9,
-    };
-
-    const observer = new IntersectionObserver(intersectionHandler, {
-      rootMargin: "100px",
-      threshold: 0.4,
-    });
-    summary && observer.observe(summary);
-    experience && observer.observe(experience);
-    project && observer.observe(project);
+      summary && observer.observe(summary);
+      experience && observer.observe(experience);
+      project && observer.observe(project);
+    }
   }, [onScrollChange]);
 
   return (
