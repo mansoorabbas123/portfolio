@@ -30,7 +30,7 @@ export const SectionList = ({
         </a>
       </li>
       <li className="mb-2">
-        <a href="#" className="group flex items-center gap-4 py-2">
+        <a href="#EXPERIENCE" className="group flex items-center gap-4 py-2">
           <span
             className={classNames(
               `group-hover:w-16  h-[1px] transition-all duration-300 group-hover:bg-white bg-flord`,

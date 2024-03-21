@@ -11,7 +11,6 @@ type Props = {
 
 export const Gallery = ({ slug }: Props) => {
   const [selectedImage, setSelectedImage] = useState<IImage | null>(null);
-
   const project = useMemo(() => getProject(slug), [slug]);
 
   return (

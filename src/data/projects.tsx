@@ -7,7 +7,7 @@ import slugify from "slugify";
 export const Projects: IProject[] = [
   {
     id: uuid(),
-    title: "Build a Spotify Connected App",
+    title: "Build a Spotify Connected App 1",
     startDate: "2002",
     endDate: "2020",
     image: img,
@@ -106,7 +106,7 @@ export const Projects: IProject[] = [
   },
   {
     id: uuid(),
-    title: "Build a Spotify Connected App",
+    title: "Build a Spotify Connected App 2",
     startDate: "2002",
     endDate: "2020",
     image: img,
@@ -182,7 +182,7 @@ export const Projects: IProject[] = [
   },
   {
     id: uuid(),
-    title: "Build a Spotify Connected App",
+    title: "Build a Spotify Connected App 3",
     startDate: "2002",
     endDate: "2020",
     image: img,

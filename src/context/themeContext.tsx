@@ -30,14 +30,8 @@ export const ThemeProvider: React.FC<{ children: ReactNode }> = ({
   const [isDarkTheme, setIsDarkTheme] = useState(true);
 
   useEffect(() => {
-    // const isDarkTheme = window.matchMedia(
-    //   "(prefers-color-scheme: dark)"
-    // ).matches;
-
-    // setIsDarkTheme(isDarkTheme);
-
     isDarkTheme && document.body.classList.add("dark");
-  }, []);
+  }, [isDarkTheme]);
 
   useEffect(() => {
     isDarkTheme

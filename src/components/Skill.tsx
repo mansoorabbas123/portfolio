@@ -6,7 +6,7 @@ const Skill = () => {
       <span className="font-bold dark:text-white">React</span>
       <div
         className="radial-progress text-[10px] text-teal-300"
-        style={{ "--value": 70, "--size": "40px" }}
+        style={{ "--value": 70, "--size": "40px" } as any}
         role="progressbar"
       >
         70%

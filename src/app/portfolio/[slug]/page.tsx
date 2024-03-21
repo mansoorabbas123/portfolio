@@ -1,12 +1,11 @@
-"use client";
 import { IArrowUp } from "@/assets/icons";
-import { BodyOverlay, Gallery, Header, Modal } from "@/components";
-import { useRouter, useSearchParams } from "next/navigation";
-import React, { useState } from "react";
+import { BodyOverlay, Gallery, Header } from "@/components";
+import { Projects } from "@/data";
+import slugify from "slugify";
 
 type PageProps = { params: { slug: string } };
 
-const Page = ({ params }: PageProps) => {
+export default function page({ params }: PageProps) {
   return (
     <>
       <Header extraClass="fixed top-0 left-0 right-0 z-10" />
@@ -42,6 +41,8 @@ const Page = ({ params }: PageProps) => {
       </section>
     </>
   );
-};
+}
 
-export default Page;
+export function generateStaticParams() {
+  return Projects.map((el) => ({ slug: slugify(el.title) }));
+}
