@@ -31,7 +31,7 @@ export const Modal: React.FC<Props> = ({ children, open, onClose }) => {
     <div
       onClick={onClose}
       className={classNames(
-        "fixed z-50 inset-0 bg-green-400  bg-opacity-50  place-items-center  ",
+        "fixed z-50 inset-0 bg-slate-900  bg-opacity-50  place-items-center  ",
         {
           hidden: !open,
           grid: open,

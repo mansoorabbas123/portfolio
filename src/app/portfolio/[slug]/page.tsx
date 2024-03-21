@@ -15,7 +15,7 @@ export default function page({ params }: PageProps) {
         <div className="hero-content text-center">
           <div className="max-w-md">
             <h1 className="text-5xl font-bold dark:text-teal-300">
-              Canvase Events Dashboar
+              Canvase Events Dashboard
             </h1>
             <p className="py-6 dark:text-slate-50 ">
               Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda

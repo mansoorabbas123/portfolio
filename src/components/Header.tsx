@@ -9,7 +9,7 @@ export const Header = ({ extraClass }: Props) => {
   return (
     <header
       className={classNames(
-        "w-full dark:text-slate-700 px-6 py-4 mb-10 lg:mb-0   dark:bg-slate-900  ",
+        "w-full dark:text-slate-700 px-6 py-4 mb-10 lg:mb-0  bg-white dark:bg-slate-900   ",
         extraClass
       )}
     >
@@ -19,6 +19,7 @@ export const Header = ({ extraClass }: Props) => {
         </Link>
         <ToggleButton />
       </div>
+
     </header>
   );
 };
