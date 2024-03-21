@@ -7,7 +7,7 @@ type Props = {
 };
 
 export const BodyOverlay = ({ onScrollChange }: Props) => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [mousePosition, setMousePosition] = useState({ x: 100, y: 1000 });
   const { isDarkTheme } = useTheme();
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
