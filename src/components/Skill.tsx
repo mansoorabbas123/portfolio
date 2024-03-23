@@ -1,7 +1,7 @@
 import React from "react";
 import { skills } from "../data/skills";
 
-type Props = {Skill: { title: string; level: number }};
+type Props = {skill: { title: string; level: number }};
 
 const Skill = ({ skill }: Props) => {
   return (
