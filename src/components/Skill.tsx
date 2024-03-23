@@ -1,9 +1,9 @@
 import React from "react";
 import { skills } from "../data/skills";
 
-type skill = { title: string; level: number };
+type Props = {Skill: { title: string; level: number }};
 
-const Skill = ({ skill }) => {
+const Skill = ({ skill }: Props) => {
   return (
     <div className="flex flex-col-reverse items-center gap-2 ">
       <span className="dark:text-white">{skill.title}</span>
