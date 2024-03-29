@@ -22,7 +22,7 @@ export const summery = {
       built well under the hood. In my free time, I have also released an online
       video course that covers everything you need to know to build a web app
       with the Spotify API. */}
-      👋 Welcome to my corner of the digital universe! I'm a professional JavaScript developer, and I'm on a mission to create dynamic, interactive web applications that truly make a difference. My journey in the world of technology has taken me through a captivating landscape of tools and frameworks, and I've had the pleasure of mastering many.
+      👋 Welcome to my corner of the digital universe! I&apos;m a professional JavaScript developer, and I&apos;m on a mission to create dynamic, interactive web applications that truly make a difference. My journey in the world of technology has taken me through a captivating landscape of tools and frameworks, and I&apos;ve had the pleasure of mastering many.
     </p>,
     <p key={uuid()}>
       {/* When I am not at the computer, I am usually rock climbing, reading,
@@ -31,9 +31,8 @@ export const summery = {
       With these versatile instruments, I craft scalable, high-performance, and user-friendly solutions across a wide range of domains and challenges.
     </p>,
     <p key={uuid()}>
-      🚀 Let's Collaborate:
-      I thrive on new opportunities and collaborative ventures that help me grow as both a developer and a person. Whether you're interested in working with me or just want to have a friendly chat, don't hesitate to reach out. You can contact me via LinkedIn or email.
-
+      🚀 Let&apos;s Collaborate:
+      I thrive on new opportunities and collaborative ventures that help me grow as both a developer and a person. Whether you&apos;re interested in working with me or just want to have a friendly chat, don&apos;t hesitate to reach out. You can contact me via LinkedIn or email.
     </p>
   ],
 };
