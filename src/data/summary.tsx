@@ -32,7 +32,7 @@ export const summery = {
     </p>,
     <p key={uuid()}>
       🚀 Let&apos;s Collaborate:
-      I thrive on new opportunities and collaborative ventures that help me grow as both a developer and a person. Whether you&apos;re interested in working with me or just want to have a friendly chat, don&apos;t hesitate to reach out. You can contact me via LinkedIn or email.
+      I thrive on new opportunities and collaborative ventures that help me grow as both a developer and a person. Whether you&apos;re interested in working with me or just want to have a friendly chat, don&apos;t hesitate to reach out. You can contact me via email, LinkedIn or whatsapp.
     </p>
   ],
 };

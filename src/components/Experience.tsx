@@ -2,12 +2,13 @@ import React from "react";
 import { Tag } from ".";
 import { IArrowUp } from "@/assets/icons";
 import { IExperience } from "@/interfaces";
+import Link from "next/link";
 
 type Props = { data: IExperience };
 
 export const Experience = ({ data }: Props) => {
   return (
-    <a
+    <Link
       href="#"
       className="Experience-container group flex flex-col md:flex-row gap-1 lg:gap-4 mb-8 lg:mb-14 px-6 py-4 transition-all rounded-lg hover:dark:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]"
     >
@@ -44,6 +45,6 @@ export const Experience = ({ data }: Props) => {
           ))}
         </div>
       </div>
-    </a>
+    </Link>
   );
 };

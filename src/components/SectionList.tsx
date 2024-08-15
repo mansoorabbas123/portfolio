@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import Link from "next/link";
 
 export const SectionList = ({
   activeSection,
@@ -8,7 +9,7 @@ export const SectionList = ({
   return (
     <ul className="hidden lg:block text-xs font-bold text-slate-gray uppercase w-max">
       <li className="mb-2 ">
-        <a href="#" className="group flex items-center gap-4 py-2">
+        <Link href="#" className="group flex items-center gap-4 py-2">
           <span
             className={classNames(
               `group-hover:w-16  h-[1px] transition-all duration-300 group-hover:bg-white bg-flord`,
@@ -27,10 +28,10 @@ export const SectionList = ({
           >
             about
           </span>
-        </a>
+        </Link>
       </li>
       <li className="mb-2">
-        <a href="#EXPERIENCE" className="group flex items-center gap-4 py-2">
+        <Link href="#EXPERIENCE" className="group flex items-center gap-4 py-2">
           <span
             className={classNames(
               `group-hover:w-16  h-[1px] transition-all duration-300 group-hover:bg-white bg-flord`,
@@ -49,10 +50,10 @@ export const SectionList = ({
           >
             Experience
           </span>
-        </a>
+        </Link>
       </li>
       <li className="mb-2 ">
-        <a href="#PROJECTS" className="group flex items-center gap-4 py-2">
+        <Link href="#PROJECTS" className="group flex items-center gap-4 py-2">
           <span
             className={classNames(
               `group-hover:w-16  8 h-[1px] transition-all duration-300 group-hover:bg-white bg-flord`,
@@ -70,7 +71,7 @@ export const SectionList = ({
           >
             projects
           </span>
-        </a>
+        </Link>
       </li>
     </ul>
   );

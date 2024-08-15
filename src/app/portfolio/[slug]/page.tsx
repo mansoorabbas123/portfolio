@@ -1,6 +1,7 @@
 import { IArrowUp } from "@/assets/icons";
 import { BodyOverlay, Gallery, Header } from "@/components";
 import { Projects } from "@/data";
+import Link from "next/link";
 import slugify from "slugify";
 
 type PageProps = { params: { slug: string } };
@@ -22,12 +23,12 @@ export default function page({ params }: PageProps) {
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
             </p>
-            <a href="#gallery" className="btn btn-outline dark:text-teal-300  ">
+            <Link href="#gallery" className="btn btn-outline dark:text-teal-300  ">
               Have a Look
               <span className="rotate-180">
                 <IArrowUp width={16} height={16} />
               </span>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

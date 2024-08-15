@@ -10,6 +10,7 @@ import {
   Header,
   SkillList,
 } from "@/components";
+import { DownloadResume } from "@/components/DownloadResume";
 
 import { summery, Experiences, Projects } from "@/data";
 import { useState } from "react";
@@ -57,15 +58,7 @@ export default function Home() {
                 <Experience key={el.id} data={el} />
               ))}
 
-              <a
-                href="#"
-                className="group hover:text-teal-300 transition-all flex items-center  w-fit py-2 mb-5  "
-              >
-                View Résumé in PDF
-                <span className="rotate-45 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 group-focus-visible:-translate-y-1 group-focus-visible:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px">
-                  <IArrowUp width={16} height={16} />
-                </span>
-              </a>
+              <DownloadResume />
             </section>
             <section id="PROJECTS" data-id="PROJECTS">
               <div className="sticky top-0 z-20 -mx-6   w-screen  px-6 py-5 bg-white dark:bg-transparent dark:backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
