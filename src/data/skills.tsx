@@ -10,8 +10,13 @@ export const skills = [
     {
         title: "Javascript",
         level: 90
-    }, {
-        title: "React/Next.js",
+    }, 
+    {
+        title: "React.js",
+        level: 95
+    },
+    {
+        title: "React.js",
         level: 95
     },
     {
