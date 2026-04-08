@@ -35,7 +35,7 @@ export const Experience = ({ data }: Props) => {
 
         <ul className="  mb-6 list-disc text-sm ">
           {data.tasks.map((el) => (
-            <li key={el.id}>{el.text}</li>
+            <li key={el.id}>{el.text.replace(/'/g, "&apos;")}</li>
           ))}
         </ul>
 
